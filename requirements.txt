@@ -1,0 +1,5 @@
+django>=2.1.11
+djangorestframework>=3.9.1
+psycopg2>=2.7,<3.0
+flake8==3.5.0
+requests
