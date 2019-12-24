@@ -27,4 +27,4 @@ $ docker-compose -f docker-compose.yml build
 
 O comando executará o sistema. Caso tudo ocorra normalmente, será possível acessar a interface da API em:
 
-[https:\\localhost:8000](https:\\localhost:8000)
+[https:\\\localhost:8000](https:\\localhost:8000)
