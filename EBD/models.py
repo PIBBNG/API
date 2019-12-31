@@ -17,7 +17,7 @@ class EBDClass(models.Model):
     class Meta:
         db_table = 'ebd_class'
 
-    name = models.CharField(max_length=100, null=False, blank=False)
+    name = models.CharField(max_length=100, null=False, blank=False, unique=True)
 
 
 class ClassRegister(models.Model):
