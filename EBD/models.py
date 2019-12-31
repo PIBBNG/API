@@ -30,4 +30,4 @@ class ClassRegister(models.Model):
     presence = models.BooleanField(default=False)
     reading = models.BooleanField(default=False)
     visitor = models.BooleanField(default=False)
-    student = models.ForeignKey("users.CustomUser", null=True, on_delete=models.CASCADE, related_name='class_register')
+    student = models.ForeignKey("EBDUser", null=True, on_delete=models.CASCADE, related_name='class_register')
