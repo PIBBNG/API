@@ -1,7 +1,24 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.postgres.fields import ArrayField
+from users.models import CustomUser
 
-# Create your models here.
+
+class EBDUser(CustomUser):
+    
+    class Meta:
+        db_table = 'ebd_user'
+
+    ebd_class = models.OneToOneField("EBDClass", null=False, on_delete=models.CASCADE, related_name='ebd_class')
+
+
+class EBDClass(models.Model):
+
+    class Meta:
+        db_table = 'ebd_class'
+
+    name = models.CharField(max_length=100, null=False, blank=False)
+
 class ClassRegister(models.Model):
 
     class Meta:
