@@ -9,7 +9,7 @@ class EBDUser(CustomUser):
     class Meta:
         db_table = 'ebd_user'
 
-    ebd_class = models.OneToOneField("EBDClass", null=False, on_delete=models.CASCADE, related_name='ebd_class')
+    ebd_class = models.ForeignKey("EBDClass", null=False, on_delete=models.CASCADE, related_name='ebd_class')
 
 
 class EBDClass(models.Model):
@@ -18,6 +18,7 @@ class EBDClass(models.Model):
         db_table = 'ebd_class'
 
     name = models.CharField(max_length=100, null=False, blank=False)
+
 
 class ClassRegister(models.Model):
 
