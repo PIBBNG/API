@@ -28,3 +28,21 @@ $ docker-compose up
 O comando executará o sistema. Caso tudo ocorra normalmente, será possível acessar a interface da API em:
 
 [https:\\\localhost:8000](https:\\localhost:8000)
+
+## Exemplos de Requisição:
+
+### Cadastro de uma nova classe de EBD:
+
+```
+
+$ curl -d '{"class_name":"Adultos"}' -H "Content-Type: application/json" -X POST http://localhost:8000/ebd-class/
+
+```
+
+### Listagem das classes de EBD:
+
+```
+
+$ curl -X GET http://localhost:8000/ebd-class/
+
+```
