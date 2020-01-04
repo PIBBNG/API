@@ -24,17 +24,15 @@ class EBDClassView(APIView):
             return Response(status=status.HTTP_400_BAD_REQUEST)
     
     def get(self, request):
-        # try:
-        ebd_class_data = EBDClass.objects.all()
+        try:
+            ebd_class_data = EBDClass.objects.all()
 
-        data = {}
-        index = 0
-        for ebd_class in ebd_class_data:
-            aux = {}
-            aux["class_name"] = ebd_class.name
-            aux["students_count"] = ebd_class.ebd_class.count()
-            data[f'class_{index}'] = aux
-            index += 1
-        return Response(data, status=status.HTTP_200_OK)
-        # except:
-        #     return Response(status=status.HTTP_404_NOT_FOUND)
+            data = []
+            for ebd_class in ebd_class_data:
+                aux = {}
+                aux["class_name"] = ebd_class.name
+                aux["students_count"] = ebd_class.ebd_class.count()
+                data.append(aux)
+            return Response(data, status=status.HTTP_200_OK)
+        except:
+            return Response(status=status.HTTP_404_NOT_FOUND)
