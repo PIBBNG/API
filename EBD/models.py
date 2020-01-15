@@ -5,7 +5,7 @@ from users.models import CustomUser
 
 
 class EBDUser(CustomUser):
-    
+
     class Meta:
         db_table = 'ebd_user'
 
@@ -18,6 +18,7 @@ class EBDClass(models.Model):
         db_table = 'ebd_class'
 
     name = models.CharField(max_length=100, null=False, blank=False, unique=True)
+    is_active = models.BooleanField(default=True)
 
 
 class ClassRegister(models.Model):
@@ -30,5 +31,16 @@ class ClassRegister(models.Model):
     lesson = models.BooleanField(default=False)
     presence = models.BooleanField(default=False)
     reading = models.BooleanField(default=False)
+    cult =  models.BooleanField(default=False)
     visitor = models.BooleanField(default=False)
     student = models.ForeignKey("EBDUser", null=True, on_delete=models.CASCADE, related_name='class_register')
+
+
+class EBD(models.Model):
+
+    class Meta:
+        db_table = 'ebd'
+
+    date = models.DateTimeField(default=timezone.now)
+    lesson_class = models.ForeignKey("EBDClass", null=True, on_delete=models.CASCADE, related_name='lesson_class')
+    lesson_theme = models.CharField(help_text= "Tema da EBD", max_length=255, blank=True, default="")
