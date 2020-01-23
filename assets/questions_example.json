@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "statement":"Pergunta teste 1! Qual é a opção da letra A?",
+            "alternatives":[
+                {
+                    "text":"Essa aqui!",
+                    "validate":"True"
+                },
+                {
+                    "text":"Não!",
+                    "validate":"False"
+                },
+                {
+                    "text":"N!",
+                    "validate":"False"
+                },
+                {
+                    "text":"N mesmo!!",
+                    "validate":"False"
+                }
+            ]
+        },
+        {
+            "statement":"Pergunta teste 2! Qual é a opção da letra B?",
+            "alternatives":[
+                {
+                    "text":"Nops",
+                    "validate":"False"
+                },
+                {
+                    "text":"Essa!",
+                    "validate":"True"
+                },
+                {
+                    "text":"N!",
+                    "validate":"False"
+                },
+                {
+                    "text":"N mesmo!!",
+                    "validate":"False"
+                }
+            ]
+        },
+        {
+            "statement":"Pergunta teste 3! Não A, não C, Não B?",
+            "alternatives":[
+                {
+                    "text":"Nops",
+                    "validate":"False"
+                },
+                {
+                    "text":"Negativo!",
+                    "validate":"False"
+                },
+                {
+                    "text":"N!",
+                    "validate":"False"
+                },
+                {
+                    "text":"Essa!",
+                    "validate":"True"
+                }
+            ]
+        }
+    ]
+}
