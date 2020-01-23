@@ -22,5 +22,5 @@ from acamps_questions.views import AcampsQuestionsViews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ebd-class/', EBDClassView.as_view()),
-    path('new-acamps-questions', AcampsQuestionsViews.as_view())
+    path('new-acamps-questions/', AcampsQuestionsViews.as_view())
 ]

@@ -67,3 +67,29 @@ class AcampsQuestionsViews(APIView):
         
         return Response(response={"acamps_questions_id":acamps.id},status=status.HTTP_200_OK)
 
+
+class QuestionsView(APIView):
+
+    def get(self, request):
+        try:
+            acamps_id = request.data["acamps_id"]
+            question_id = request.data["question_id"]
+        except:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        try:
+            acamps = AcampsQuestions.objects.get(id=acamps_id)
+            question = acamps.questions.get(id=question_id)
+            print("[LOG] QUESTÃO ENCONTRADA!")
+        except:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        q = {}
+        q["statement"] = question.statement
+        a = []
+        for alternative in question.alternatives.all():
+            a_body = {}
+            a_body["text"] = alternative.text
+            a_body["validate"] = alternative.validate
+            a.append(a_body)
+        q["alternatives"] = a
+
+        return Response(response=q,status=status.HTTP_200_OK)
