@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.http import JsonResponse
 from acamps_questions.models import Alternative, Question, Team, AcampsQuestions
+import json
 
 class AcampsQuestionsViews(APIView):
 
@@ -65,8 +66,17 @@ class AcampsQuestionsViews(APIView):
         except:
             return Response(status=status.HTTP_400_BAD_REQUEST)
         
-        return Response(response={"acamps_questions_id":acamps.id},status=status.HTTP_200_OK)
+        return Response({"acamps_questions_id":acamps.id},status=status.HTTP_200_OK)
 
+    def get(self, request):
+        acampsQuestions = AcampsQuestions.objects.all()
+        response = []
+        for questions in acampsQuestions:
+            q = {}
+            q['id'] = questions.id
+            q['title'] = questions.title
+            response.append(q)
+        return Response(response,status=status.HTTP_200_OK)
 
 class QuestionsView(APIView):
 
