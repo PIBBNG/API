@@ -9,7 +9,7 @@ class Alternative(models.Model):
 class Question(models.Model):
     statement = models.CharField("Enunciado da questão", max_length=255, null=False, default="")
     acamp_questions = models.ForeignKey("AcampsQuestions", null=False, on_delete=models.CASCADE, related_name='questions')
-    winner = models.ForeignKey("Team", null=False, on_delete=models.CASCADE, related_name='winner')
+    winner = models.ForeignKey("Team", null=True, on_delete=models.CASCADE, related_name='winner')
 
 
 class Team(models.Model):
