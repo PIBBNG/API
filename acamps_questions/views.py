@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.http import JsonResponse
-from acamps_questions.models import Alternative, Question, Team, AcampsQuestions
+from acamps_questions.models import Alternative, Question, Team, AcampsQuestions, Session
 import json
 
 class AcampsQuestionsViews(APIView):
@@ -103,3 +103,37 @@ class QuestionsView(APIView):
         q["alternatives"] = a
 
         return Response(response=q,status=status.HTTP_200_OK)
+
+class SessionView(APIView):
+
+    def post(self, request):
+        try:
+            teams = request.data['teams']
+            acampsQuestions_title = request.data['acampsQuestions']
+        except:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        
+
+        print(f"[LOG] Criando uma nova sessão com: {acampsQuestions_title}")
+        try:
+            acampsQuestions = AcampsQuestions.objects.get(title=acampsQuestions_title)
+            session = Session.objects.create(
+                acamps_questions=acampsQuestions
+            )
+        except:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+
+        for team in teams:
+            t = Team.objects.get_or_create(
+                name=team,
+            )
+            t = t[0]
+            t.hits = 0
+            t.points = 0
+            t.session = session
+            t.save()
+
+        response = {}
+        response['session_id'] = session.id
+        print(f"[LOG] Sessão criada com sucesso!")
+        return Response(response, status=status.HTTP_200_OK)
