@@ -123,6 +123,7 @@ class SessionView(APIView):
         except:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
+        teams_ids = []
         for team in teams:
             t = Team.objects.get_or_create(
                 name=team,
@@ -132,8 +133,10 @@ class SessionView(APIView):
             t.points = 0
             t.session = session
             t.save()
+            teams_ids.append({"id":t.id,"name":t.name, "hits":t.hits, "points":t.points})
 
         response = {}
-        response['session_id'] = session.id
+        response['session'] = {"session_id": session.id}
+        response['teams'] = teams_ids
         print(f"[LOG] Sessão criada com sucesso!")
         return Response(response, status=status.HTTP_200_OK)
