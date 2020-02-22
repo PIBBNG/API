@@ -1,529 +1,529 @@
 {
-    "questions": [
+  "questions": [
+    {
+      "statement":"Qual a idade de Arão e Moises quando foram falar com o faraó?",
+      "alternatives":[
         {
-            "statement":"Qual a idade de Arão e Moises quando foram falar com o faraó?",
-            "alternatives":[
-                {
-                    "text":"83; 80",
-                    "validate":"True"
-                },
-                {
-                    "text":"85; 87",
-                    "validate":"False"
-                },
-                {
-                    "text":"80; 81",
-                    "validate":"False"
-                },
-                {
-                    "text":"87; 89",
-                    "validate":"False"
-                }
-            ],           
+          "text":"83; 80",
+          "validate":"True"
         },
         {
-            "statement":"Em Êxodo 7:19,Deus manda Arão por meio de Moises, estender a vara por todas as águas do  Egito. Após  isso  toda água se torna em sangue. O que  os  egípcios fizeram  para beber  a agua após a primeira praga?",
-            "alternatives":[
-                {
-                    "text":"Pediram para Moises orar a Deus",
-                    "validate":"False"
-                },
-                {
-                    "text":"Compraram  água mineral",
-                    "validate":"False"
-                },
-                {
-                    "text":"Cavaram junto ao rio",
-                    "validate":"True"
-                },
-                {
-                    "text":"Beberam água com sangue",
-                    "validate":"False"
-                }
-            ]
+          "text":"85; 87",
+          "validate":"False"
         },
         {
-            "statement":"Faraó ia habitualmente ao rio Nilo, onde por algumas vezes Moises e Arão o encontram para pedir-lhe  que libertasse  o povo  da escravidão. Em  quais pragas  Moises e    Arão foram encontrar faraó  no rio?",
-            "alternatives":[
-                {
-                    "text":"10ª  e 11ª",
-                    "validate":"False"
-                },
-                {
-                    "text":"1ª e  4ª",
-                    "validate":"True"
-                },
-                {
-                    "text":"N!",
-                    "validate":"False"
-                },
-                {
-                    "text":"N mesmo!!",
-                    "validate":"False"
-                }
-            ]
+          "text":"80; 81",
+          "validate":"False"
         },
         {
-            "statement":"Quantas pragas  os  magos  poderão  replicar?",
-            "alternatives":[
-                {
-                    "text":"1",
-                    "validate":"False"
-                },
-                {
-                    "text":"2",
-                    "validate":"True"
-                },
-                {
-                    "text":"3",
-                    "validate":"False"
-                },
-                {
-                    "text":"4",
-                    "validate":"False"
-                }
-            ]
+          "text":"87; 89",
+          "validate":"False"
+        }
+      ]      
+    },
+    {
+      "statement":"Em Êxodo 7:19,Deus manda Arão por meio de Moises, estender a vara por todas as águas do Egito. Após isso toda água se torna em sangue. O que os egípcios fizeram para beber a agua após a primeira praga?",
+      "alternatives":[
+        {
+          "text":"Pediram para Moises orar a Deus",
+          "validate":"False"
         },
         {
-            "statement":"A partir de qual praga  os magos não poderão replicar?",
-            "alternatives":[
-                {
-                    "text":"4",
-                    "validate":"False"
-                },
-                {
-                    "text":"5",
-                    "validate":"False"
-                },
-                {
-                    "text":"6",
-                    "validate":"False"
-                },
-                {
-                    "text":"3",
-                    "validate":"True"
-                }
-            ]
+          "text":"Compraram água mineral",
+          "validate":"False"
         },
         {
-            "statement":"Na pascoa, Deus estipulou  ao  povo de Israel que deveriam comer pães asmos por 7 dias. Quais eram os dias do mês estipulado que eles deveriam fazer isso?",
-            "alternatives":[
-                {
-                    "text":"Dias  1  a 7",
-                    "validate":"False"
-                },
-                {
-                    "text":"Dias 7 a 14",
-                    "validate":"False"
-                },
-                {
-                    "text":"Dias  14 a 21",
-                    "validate":"True"
-                },
-                {
-                    "text":"Dias 21 a  30",
-                    "validate":"False"
-                }
-            ]
+          "text":"Cavaram junto ao rio",
+          "validate":"True"
         },
         {
-            "statement":"Quantos dias a arca ficou flutuando no diluvio?",
-            "alternatives":[
-                {
-                    "text":"100",
-                    "validate":"False"
-                },
-                {
-                    "text":"50",
-                    "validate":"False"
-                },
-                {
-                    "text":"150",
-                    "validate":"True"
-                },
-                {
-                    "text":"200",
-                    "validate":"False"
-                }
-            ]
+          "text":"Beberam água com sangue",
+          "validate":"False"
+        }
+      ]
+    },
+    {
+      "statement":"Faraó ia habitualmente ao rio Nilo, onde por algumas vezes Moises e Arão o encontram para pedir-lhe que libertasse o povo da escravidão. Em quais pragas Moises e  Arão foram encontrar faraó no rio?",
+      "alternatives":[
+        {
+          "text":"10ª e 11ª",
+          "validate":"False"
         },
         {
-            "statement":"Quando Ló e Abrão se apartaram, qual o local que ló escolheu?",
-            "alternatives":[
-                {
-                    "text":"Cerrado do Jordão",
-                    "validate":"False"
-                },
-                {
-                    "text":"Mata do Jordão",
-                    "validate":"False"
-                },
-                {
-                    "text":"Morro de Neguebe",
-                    "validate":"False"
-                },
-                {
-                    "text":"Campina do Jordão",
-                    "validate":"True"
-                }
-            ]
+          "text":"1ª e 4ª",
+          "validate":"True"
         },
         {
-            "statement":"Qual o nome do príncipe que violentou Dina?",
-            "alternatives":[
-                {
-                    "text":"Abimeleque",
-                    "validate":"False"
-                },
-                {
-                    "text":"Melquizedeque",
-                    "validate":"False"
-                },
-                {
-                    "text":"Siquém",
-                    "validate":"True"
-                },
-                {
-                    "text":"Neustã",
-                    "validate":"False"
-                }
-            ]
+          "text":"N!",
+          "validate":"False"
         },
         {
-            "statement":"Por quantas moedas de prata  José foi vendido?",
-            "alternatives":[
-                {
-                    "text":"10 moedas",
-                    "validate": "False"
-                },
-                {
-                    "text":"30 moedas",
-                    "validate": "False"
-                },
-                {
-                    "text":"40 moedas",
-                    "validate": "False"
-                },
-                {
-                    "text":"20 moedas",
-                    "validate":"True"
-                }
-            ]
+          "text":"N mesmo!!",
+          "validate":"False"
+        }
+      ]
+    },
+    {
+      "statement":"Quantas pragas os magos poderão replicar?",
+      "alternatives":[
+        {
+          "text":"1",
+          "validate":"False"
         },
         {
-            "statement":"Judá  teve três  filhos com Sua a adulamita. Quais os nomes desses  filhos?",
-            "alternatives":[
-                {
-                    "text":"Er, Onã e Selá",
-                    "validate":"True"
-                },
-                {
-                    "text":"Nadabi, Uzias e Urias",
-                    "validate": "False"
-                },
-                {
-                    "text":"Jotão, Labão,  Jorão",
-                    "validate": "False"
-                },
-                {
-                    "text":"Sansão, Débora e Jonathan",
-                    "validate": "False"
-                }
-            ]
+          "text":"2",
+          "validate":"True"
         },
         {
-            "statement":"Quais  os nomes dos três  amigos  de Jó?",
-            "alternatives":[
-                {
-                    "text":"Abraão, Isaque  e  Jacó",
-                    "validate": "False"
-                },
-                {
-                    "text":"Elifaz, Bildade  e Zofar",
-                    "validate":"True"
-                },
-                {
-                    "text":"Bildade, Elias  e Eliú",
-                    "validate": "False"
-                },
-                {
-                    "text":"Tião ,Pedro e João",
-                    "validate": "False"
-                }
-            ]
+          "text":"3",
+          "validate":"False"
         },
         {
-            "statement":"Quem foi o ultimo homem  a repreender Jó?",
-            "alternatives":[
-                {
-                    "text":"Ló",
-                    "validate": "False"
-                },
-                {
-                    "text":"Eliú",
-                    "validate":"True"
-                },
-                {
-                    "text":"Bildade",
-                    "validate": "False"
-                },
-                {
-                    "text":"Elifaz",
-                    "validate": "False"
-                }
-            ]
+          "text":"4",
+          "validate":"False"
+        }
+      ]
+    },
+    {
+      "statement":"A partir de qual praga os magos não poderão replicar?",
+      "alternatives":[
+        {
+          "text":"4",
+          "validate":"False"
         },
         {
-            "statement":"Quando Deus falou   no Monte Sinai pela primeira vez em êxodo 19. Quem Deus permitiu que subisse ao monte com Moises?",
-            "alternatives":[
-                {
-                    "text":"Josué",
-                    "validate": "False"
-                },
-                {
-                    "text":"Calebe",
-                    "validate": "False"
-                },
-                {
-                    "text":"Arão",
-                    "validate":"True"
-                },
-                {
-                    "text":"Anaúde",
-                    "validate": "False"
-                }
-            ]
+          "text":"5",
+          "validate":"False"
         },
         {
-            "statement":"Em Meribá o povo  de Israel reclama por  falta  de água, no entanto Moises fala com Deus  que por sua fez  dá a ordem a  Moises para que ele resolvesse  o  problema. O  que  Deus ordena a Moises ?",
-            "alternatives":[
-                {
-                    "text":"Manda tocar na rocha",
-                    "validate": "False"
-                },
-                {
-                    "text":"Manda jogar galhos no rio",
-                    "validate": "False"
-                },
-                {
-                    "text":"Manda  falar a rocha",
-                    "validate":"True"
-                },
-                {
-                    "text":"Manda Josué comprar água",
-                    "validate": "False"
-                }
-            ]
+          "text":"6",
+          "validate":"False"
         },
         {
-            "statement":"Na batalha contra o rei  Jabim, nos tempos de Débora, Deus manda Baraque convocar 10 mil homens para essa batalha.  De quais tribos Baraque convoca esses homens?",
-            "alternatives":[
-                {
-                    "text":"Zebulom e Naftali",
-                    "validate": "True"
-                },
-                {
-                    "text":"Judá e  Benjamin",
-                    "validate": "False"
-                },
-                {
-                    "text":"Dã e Issacar",
-                    "validate": "False"
-                },
-                {
-                    "text":"Caipós e Ticunas",
-                    "validate": "False"
-                }
-            ]
+          "text":"3",
+          "validate":"True"
+        }
+      ]
+    },
+    {
+      "statement":"Na pascoa, Deus estipulou ao povo de Israel que deveriam comer pães asmos por 7 dias. Quais eram os dias do mês estipulado que eles deveriam fazer isso?",
+      "alternatives":[
+        {
+          "text":"Dias 1 a 7",
+          "validate":"False"
         },
         {
-            "statement":"No capitulo 15 de Juízes, Sansão coloca  fogo na seara dos filisteus por conta que foi enganado pelo seu sogro filisteu. Para essa façanha Sansão   utilizou raposas. Quantas ele utilizou?",
-            "alternatives":[
-                {
-                    "text":"150",
-                    "validate": "False"
-                },
-                {
-                    "text":"200",
-                    "validate": "False"
-                },
-                {
-                    "text":"350",
-                    "validate": "False"
-                },
-                {
-                    "text":"300",
-                    "validate":"True"
-                }
-            ]
+          "text":"Dias 7 a 14",
+          "validate":"False"
         },
         {
-            "statement":"Onde Davi Nasceu?",
-            "alternatives":[
-                {
-                    "text":"Jerusalém",
-                    "validate": "False"
-                },
-                {
-                    "text":"Belém",
-                    "validate":"True"
-                },
-                {
-                    "text":"Cananéia",
-                    "validate": "False"
-                },
-                {
-                    "text":"Siquém",
-                    "validate": "False"
-                }
-            ]
+          "text":"Dias 14 a 21",
+          "validate":"True"
         },
         {
-            "statement":"De que povo era o moço que deu a notícia  da morte do rei Saul a Daví?",
-            "alternatives":[
-                {
-                    "text":"Filisteus",
-                    "validate": "False"
-                },
-                {
-                    "text":"Amorreus",
-                    "validate": "False"
-                },
-                {
-                    "text":"Amalequitas",
-                    "validate":"True"
-                },
-                {
-                    "text":"Moabitas",
-                    "validate": "False"
-                }
-            ]
+          "text":"Dias 21 a 30",
+          "validate":"False"
+        }
+      ]
+    },
+    {
+      "statement":"Quantos dias a arca ficou flutuando no diluvio?",
+      "alternatives":[
+        {
+          "text":"100",
+          "validate":"False"
         },
         {
-            "statement":"Qual o  nome do profeta que repreendeu Davi quando ele cometeu adultério?",
-            "alternatives":[
-                {
-                    "text":"Natã",
-                    "validate":"True"
-                },
-                {
-                    "text":"Samuel",
-                    "validate": "False"
-                },
-                {
-                    "text":"Elias",
-                    "validate": "False"
-                },
-                {
-                    "text":"Joabe",
-                    "validate": "False"
-                }
-            ]
+          "text":"50",
+          "validate":"False"
         },
         {
-            "statement":"Qual o nome do filho de Davi que cometeu incesto?",
-            "alternatives":[
-                {
-                    "text":"Salomão",
-                    "validate": "False"
-                },
-                {
-                    "text":"Jonatas",
-                    "validate": "False"
-                },
-                {
-                    "text":"Amnom",
-                    "validate":"True"
-                },
-                {
-                    "text":"Absalão",
-                    "validate": "False"
-                }
-            ]
+          "text":"150",
+          "validate":"True"
         },
         {
-            "statement":"Quantos eram os valentes de Davi?",
-            "alternatives":[
-                {
-                    "text":"26",
-                    "validate": "False"
-                },
-                {
-                    "text":"24",
-                    "validate": "False"
-                },
-                {
-                    "text":"12",
-                    "validate": "False"
-                },
-                {
-                    "text":"37",
-                    "validate":"True"
-                }
-            ]
+          "text":"200",
+          "validate":"False"
+        }
+      ]
+    },
+    {
+      "statement":"Quando Ló e Abrão se apartaram, qual o local que ló escolheu?",
+      "alternatives":[
+        {
+          "text":"Cerrado do Jordão",
+          "validate":"False"
         },
         {
-            "statement":"No livro de Ezequiel Deus fala sobre duas prostitutas Oola e Oolibá, Ele diz que essas prostitutas são referencias a duas cidades , quais são elas?",
-            "alternatives":[
-                {
-                    "text":"Samaria e Jerusalém",
-                    "validate":"True"
-                },
-                {
-                    "text":"Sodoma  e Gomorra",
-                    "validate": "False"
-                },
-                {
-                    "text":"Babilônia e Sisã",
-                    "validate": "False"
-                },
-                {
-                    "text":"Efrata e Belém",
-                    "validate": "False"
-                }
-            ]
+          "text":"Mata do Jordão",
+          "validate":"False"
         },
         {
-            "statement":"Qual o nome do rei que assinou o decreto que fez com que Daniel fosse jogado na cova dos leões?",
-            "alternatives":[
-                {
-                    "text":"Dário",
-                    "validate":"True"
-                },
-                {
-                    "text":"Nabucodonosor",
-                    "validate": "False"
-                },
-                {
-                    "text":"Artaxexes",
-                    "validate": "False"
-                },
-                {
-                    "text":"Nebuzaradã",
-                    "validate": "False"
-                }
-            ]
+          "text":"Morro de Neguebe",
+          "validate":"False"
         },
         {
-            "statement":"Que profeta teve uma visão de um cesto de fruta de verão?",
-            "alternatives":[
-                {
-                    "text":"Habacuque",
-                    "validate": "False"
-                },
-                {
-                    "text":"Amós",
-                    "validate":"True"
-                },
-                {
-                    "text":"Zacarias",
-                    "validate": "False"
-                },
-                {
-                    "text":"Obadias",
-                    "validate": "False"
-                }
-            ]
+          "text":"Campina do Jordão",
+          "validate":"True"
+        }
+      ]
+    },
+    {
+      "statement":"Qual o nome do príncipe que violentou Dina?",
+      "alternatives":[
+        {
+          "text":"Abimeleque",
+          "validate":"False"
         },
-    ]
+        {
+          "text":"Melquizedeque",
+          "validate":"False"
+        },
+        {
+          "text":"Siquém",
+          "validate":"True"
+        },
+        {
+          "text":"Neustã",
+          "validate":"False"
+        }
+      ]
+    },
+    {
+      "statement":"Por quantas moedas de prata José foi vendido?",
+      "alternatives":[
+        {
+          "text":"10 moedas",
+          "validate": "False"
+        },
+        {
+          "text":"30 moedas",
+          "validate": "False"
+        },
+        {
+          "text":"40 moedas",
+          "validate": "False"
+        },
+        {
+          "text":"20 moedas",
+          "validate":"True"
+        }
+      ]
+    },
+    {
+      "statement":"Judá teve três filhos com Sua a adulamita. Quais os nomes desses filhos?",
+      "alternatives":[
+        {
+          "text":"Er, Onã e Selá",
+          "validate":"True"
+        },
+        {
+          "text":"Nadabi, Uzias e Urias",
+          "validate": "False"
+        },
+        {
+          "text":"Jotão, Labão, Jorão",
+          "validate": "False"
+        },
+        {
+          "text":"Sansão, Débora e Jonathan",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Quais os nomes dos três amigos de Jó?",
+      "alternatives":[
+        {
+          "text":"Abraão, Isaque e Jacó",
+          "validate": "False"
+        },
+        {
+          "text":"Elifaz, Bildade e Zofar",
+          "validate":"True"
+        },
+        {
+          "text":"Bildade, Elias e Eliú",
+          "validate": "False"
+        },
+        {
+          "text":"Tião ,Pedro e João",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Quem foi o ultimo homem a repreender Jó?",
+      "alternatives":[
+        {
+          "text":"Ló",
+          "validate": "False"
+        },
+        {
+          "text":"Eliú",
+          "validate":"True"
+        },
+        {
+          "text":"Bildade",
+          "validate": "False"
+        },
+        {
+          "text":"Elifaz",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Quando Deus falou  no Monte Sinai pela primeira vez em êxodo 19. Quem Deus permitiu que subisse ao monte com Moises?",
+      "alternatives":[
+        {
+          "text":"Josué",
+          "validate": "False"
+        },
+        {
+          "text":"Calebe",
+          "validate": "False"
+        },
+        {
+          "text":"Arão",
+          "validate":"True"
+        },
+        {
+          "text":"Anaúde",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Em Meribá o povo de Israel reclama por falta de água, no entanto Moises fala com Deus que por sua fez dá a ordem a Moises para que ele resolvesse o problema. O que Deus ordena a Moises ?",
+      "alternatives":[
+        {
+          "text":"Manda tocar na rocha",
+          "validate": "False"
+        },
+        {
+          "text":"Manda jogar galhos no rio",
+          "validate": "False"
+        },
+        {
+          "text":"Manda falar a rocha",
+          "validate":"True"
+        },
+        {
+          "text":"Manda Josué comprar água",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Na batalha contra o rei Jabim, nos tempos de Débora, Deus manda Baraque convocar 10 mil homens para essa batalha. De quais tribos Baraque convoca esses homens?",
+      "alternatives":[
+        {
+          "text":"Zebulom e Naftali",
+          "validate": "True"
+        },
+        {
+          "text":"Judá e Benjamin",
+          "validate": "False"
+        },
+        {
+          "text":"Dã e Issacar",
+          "validate": "False"
+        },
+        {
+          "text":"Caipós e Ticunas",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"No capitulo 15 de Juízes, Sansão coloca fogo na seara dos filisteus por conta que foi enganado pelo seu sogro filisteu. Para essa façanha Sansão  utilizou raposas. Quantas ele utilizou?",
+      "alternatives":[
+        {
+          "text":"150",
+          "validate": "False"
+        },
+        {
+          "text":"200",
+          "validate": "False"
+        },
+        {
+          "text":"350",
+          "validate": "False"
+        },
+        {
+          "text":"300",
+          "validate":"True"
+        }
+      ]
+    },
+    {
+      "statement":"Onde Davi Nasceu?",
+      "alternatives":[
+        {
+          "text":"Jerusalém",
+          "validate": "False"
+        },
+        {
+          "text":"Belém",
+          "validate":"True"
+        },
+        {
+          "text":"Cananéia",
+          "validate": "False"
+        },
+        {
+          "text":"Siquém",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"De que povo era o moço que deu a notícia da morte do rei Saul a Daví?",
+      "alternatives":[
+        {
+          "text":"Filisteus",
+          "validate": "False"
+        },
+        {
+          "text":"Amorreus",
+          "validate": "False"
+        },
+        {
+          "text":"Amalequitas",
+          "validate":"True"
+        },
+        {
+          "text":"Moabitas",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Qual o nome do profeta que repreendeu Davi quando ele cometeu adultério?",
+      "alternatives":[
+        {
+          "text":"Natã",
+          "validate":"True"
+        },
+        {
+          "text":"Samuel",
+          "validate": "False"
+        },
+        {
+          "text":"Elias",
+          "validate": "False"
+        },
+        {
+          "text":"Joabe",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Qual o nome do filho de Davi que cometeu incesto?",
+      "alternatives":[
+        {
+          "text":"Salomão",
+          "validate": "False"
+        },
+        {
+          "text":"Jonatas",
+          "validate": "False"
+        },
+        {
+          "text":"Amnom",
+          "validate":"True"
+        },
+        {
+          "text":"Absalão",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Quantos eram os valentes de Davi?",
+      "alternatives":[
+        {
+          "text":"26",
+          "validate": "False"
+        },
+        {
+          "text":"24",
+          "validate": "False"
+        },
+        {
+          "text":"12",
+          "validate": "False"
+        },
+        {
+          "text":"37",
+          "validate":"True"
+        }
+      ]
+    },
+    {
+      "statement":"No livro de Ezequiel Deus fala sobre duas prostitutas Oola e Oolibá, Ele diz que essas prostitutas são referencias a duas cidades , quais são elas?",
+      "alternatives":[
+        {
+          "text":"Samaria e Jerusalém",
+          "validate":"True"
+        },
+        {
+          "text":"Sodoma e Gomorra",
+          "validate": "False"
+        },
+        {
+          "text":"Babilônia e Sisã",
+          "validate": "False"
+        },
+        {
+          "text":"Efrata e Belém",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Qual o nome do rei que assinou o decreto que fez com que Daniel fosse jogado na cova dos leões?",
+      "alternatives":[
+        {
+          "text":"Dário",
+          "validate":"True"
+        },
+        {
+          "text":"Nabucodonosor",
+          "validate": "False"
+        },
+        {
+          "text":"Artaxexes",
+          "validate": "False"
+        },
+        {
+          "text":"Nebuzaradã",
+          "validate": "False"
+        }
+      ]
+    },
+    {
+      "statement":"Que profeta teve uma visão de um cesto de fruta de verão?",
+      "alternatives":[
+        {
+          "text":"Habacuque",
+          "validate": "False"
+        },
+        {
+          "text":"Amós",
+          "validate":"True"
+        },
+        {
+          "text":"Zacarias",
+          "validate": "False"
+        },
+        {
+          "text":"Obadias",
+          "validate": "False"
+        }
+      ]
+    }
+  ]
 }

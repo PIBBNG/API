@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url,include
 from EBD.views import EBDClassView
-from acamps_questions.views import AcampsQuestionsViews, SessionView
+from acamps_questions.views import AcampsQuestionsViews, SessionView, QuestionsIds, QuestionView, TeamView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ebd-class/', EBDClassView.as_view()),
     path('acamps-questions/', AcampsQuestionsViews.as_view()),
-    path('sessions/', SessionView().as_view())
+    path('sessions/', SessionView().as_view()),
+    path('questions-ids/', QuestionsIds().as_view()),
+    path('question/', QuestionView().as_view()),
+    path('team/', TeamView().as_view()),
 ]

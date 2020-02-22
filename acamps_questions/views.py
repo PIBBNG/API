@@ -140,3 +140,69 @@ class SessionView(APIView):
         response['teams'] = teams_ids
         print(f"[LOG] Sessão criada com sucesso!")
         return Response(response, status=status.HTTP_200_OK)
+
+class QuestionsIds(APIView):
+
+    def get(self, request):
+        session_id = request.data['session_id']
+        session = Session.objects.get(id=session_id)
+        questions = session.acamps_questions.questions.all()
+        questions_ids = []
+        
+        index = 1
+        for q in questions:
+            id = {}
+            id['number'] = index
+            id['question_id'] = q.id
+            questions_ids.append(id)
+            index += 1
+        
+        return Response(questions_ids, status=status.HTTP_200_OK)
+
+class QuestionView(APIView):
+
+    def get(self, request):
+        question_id = request.data['question_id']
+        question = Question.objects.get(id=question_id)
+        
+        question_response = {}
+        question_response['statement'] = question.statement
+        question_response['winner'] = question.winner.name
+        question_response['alternatives'] = []
+
+        for alt in question.alternartives.all():
+            alternative = {}
+            alternative["text"] = alt.text
+            alternative["validate"] = alt.validate
+            question_response['alternatives'].append(alternative)
+
+        return Response(question_response, status=status.HTTP_200_OK)
+
+class TeamView(APIView):
+
+    def get(self, request):
+        # session = Session.objects.get(id=request.data['session_id'])
+        teams = Team.objects.filter(session_id=request.data['session_id'])
+
+        t = []
+        for team in teams:
+            aux = {}
+            aux['name'] = team.name
+            aux['points'] = team.points
+            aux['hits'] = team.hits
+            t.append(aux)
+        
+        return Response(t, status=status.HTTP_200_OK)
+        
+    def post(self, request):
+
+        team = Team.objects.get(name=request.data['team_name'])
+        question = Question.objects.get(id=request.data['question_id'])
+        team.points += 100
+        team.hits += 1
+        team.save()
+        question.winner = team
+        question.save()
+
+        return Response(status.HTTP_200_OK)
+    
