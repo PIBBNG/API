@@ -89,7 +89,7 @@
             "alternatives":[
                 {
                     "text":"4",
-                    "validate":"True"
+                    "validate":"False"
                 },
                 {
                     "text":"5",
@@ -131,7 +131,7 @@
             "alternatives":[
                 {
                     "text":"100",
-                    "validate":"True"
+                    "validate":"False"
                 },
                 {
                     "text":"50",
@@ -504,7 +504,6 @@
                 }
             ]
         },
-
         {
             "statement":"Que profeta teve uma visão de um cesto de fruta de verão?",
             "alternatives":[
