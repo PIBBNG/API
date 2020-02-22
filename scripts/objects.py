@@ -2,12 +2,12 @@ from acamps_questions.models import Alternative, Question, AcampsQuestions
 import json
 
 
-file = open('./assets/questions_example.json')
+file = open('./assets/true_questions.json')
 with file as f:
     data = json.load(f)
 
 acampsQuestion, created = AcampsQuestions.objects.get_or_create(
-    title='Exemplo_3'
+    title='noite_especial'
 )
 
 for q in data['questions']:

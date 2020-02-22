@@ -320,7 +320,7 @@
             "alternatives":[
                 {
                     "text":"Zebulom e Naftali",
-                    "validate": "False"
+                    "validate": "True"
                 },
                 {
                     "text":"Judá e  Benjamin",
