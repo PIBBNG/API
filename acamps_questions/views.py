@@ -144,20 +144,21 @@ class SessionView(APIView):
 class QuestionsIds(APIView):
 
     def get(self, request):
-        session_id = request.data['session_id']
-        session = Session.objects.get(id=session_id)
-        questions = session.acamps_questions.questions.all()
-        questions_ids = []
+        print(request.data)
+        # session_id = request.data['session_id']
+        # session = Session.objects.get(id=session_id)
+        # questions = session.acamps_questions.questions.all()
+        # questions_ids = []
         
-        index = 1
-        for q in questions:
-            id = {}
-            id['number'] = index
-            id['question_id'] = q.id
-            questions_ids.append(id)
-            index += 1
+        # index = 1
+        # for q in questions:
+        #     id = {}
+        #     id['number'] = index
+        #     id['question_id'] = q.id
+        #     questions_ids.append(id)
+        #     index += 1
         
-        return Response(questions_ids, status=status.HTTP_200_OK)
+        return Response( status=status.HTTP_200_OK)
 
 class QuestionView(APIView):
 
@@ -181,19 +182,19 @@ class QuestionView(APIView):
 class TeamView(APIView):
 
     def get(self, request):
-        # session = Session.objects.get(id=request.data['session_id'])
-        teams = Team.objects.filter(session_id=request.data['session_id'])
+        print(request.data)
+        # teams = Team.objects.filter(session_id=request.data['session_id'])
 
-        t = []
-        for team in teams:
-            aux = {}
-            aux['name'] = team.name
-            aux['points'] = team.points
-            aux['hits'] = team.hits
-            t.append(aux)
+        # t = []
+        # for team in teams:
+        #     aux = {}
+        #     aux['name'] = team.name
+        #     aux['points'] = team.points
+        #     aux['hits'] = team.hits
+        #     t.append(aux)
         
-        return Response(t, status=status.HTTP_200_OK)
-        
+        return Response( status=status.HTTP_200_OK)
+
     def post(self, request):
 
         team = Team.objects.get(name=request.data['team_name'])

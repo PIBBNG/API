@@ -22,9 +22,9 @@ from acamps_questions.views import AcampsQuestionsViews, SessionView, QuestionsI
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ebd-class/', EBDClassView.as_view()),
-    path('acamps-questions/', AcampsQuestionsViews.as_view()),
-    path('sessions/', SessionView().as_view()),
-    path('questions-ids/', QuestionsIds().as_view()),
-    path('question/', QuestionView().as_view()),
-    path('team/', TeamView().as_view()),
+    # path('acamps-questions/', AcampsQuestionsViews.as_view()),
+    # path('sessions/', SessionView().as_view()),
+    # path('questions-ids/', QuestionsIds().as_view()),
+    # path('question/', QuestionView().as_view()),
+    # path('team/', TeamView().as_view()),
 ]
