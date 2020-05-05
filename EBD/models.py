@@ -4,11 +4,14 @@ from django.contrib.postgres.fields import ArrayField
 from users.models import CustomUser
 
 
-class EBDUser(CustomUser):
+# class EBDUser(CustomUser):
+class EBDUser(models.Model):
 
     class Meta:
         db_table = 'ebd_user'
 
+    nickname = models.CharField(max_length=25, unique=True)
+    name = models.CharField(null=False, max_length=50, default="--")
     ebd_class = models.ForeignKey("EBDClass", null=False, on_delete=models.CASCADE, related_name='ebd_class')
 
 
@@ -18,6 +21,7 @@ class EBDClass(models.Model):
         db_table = 'ebd_class'
 
     name = models.CharField(max_length=100, null=False, blank=False, unique=True)
+    teacher = models.ForeignKey("EBDUser", on_delete=models.CASCADE, related_name='ebd_teacher')
     is_active = models.BooleanField(default=True)
 
 
